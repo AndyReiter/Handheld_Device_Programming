@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/musicGenres"
+        android:layout_width="329dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="16dp"
+        android:divider="#FFFFFF"
+        android:dividerHeight="2px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="373dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="Welcome to Andy's All-About-Rap-App! Please Click 'Rap' from the list to below to learn more about my favorite Rap artists!"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/musicGenres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
