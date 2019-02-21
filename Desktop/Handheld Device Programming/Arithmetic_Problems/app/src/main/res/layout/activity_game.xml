@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="#D3D3D3">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="166dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="77dp"
+        android:text="Start Game"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerOne"
+        app:layout_constraintTop_toBottomOf="@+id/equationView" />
+
+    <TextView
+        android:id="@+id/timerCountdown"
+        android:layout_width="68dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="446dp"
+        android:background="#FA8072"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/equationView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equationView"
+        android:layout_width="93dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="446dp"
+        android:background="#009FE1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/correctCount"
+        app:layout_constraintStart_toEndOf="@+id/timerCountdown"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/correctCount"
+        android:layout_width="68dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="446dp"
+        android:background="#32CD32"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/equationView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="116dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="84dp"
+        android:background="#ccff00"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerFour" />
+
+    <Button
+        android:id="@+id/answerOne"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="17dp"
+        android:background="#FF1493"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerThree"
+        app:layout_constraintEnd_toStartOf="@+id/answerTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerCountdown" />
+
+    <Button
+        android:id="@+id/answerTwo"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="17dp"
+        android:background="#1E90FF"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/answerFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerOne"
+        app:layout_constraintTop_toBottomOf="@+id/equationView" />
+
+    <Button
+        android:id="@+id/answerThree"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="77dp"
+        android:background="#BA55D3"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toStartOf="@+id/answerFour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerOne" />
+
+    <Button
+        android:id="@+id/answerFour"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="76dp"
+        android:background="#228B22"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/answerThree"
+        app:layout_constraintTop_toBottomOf="@+id/answerTwo" />
+
+</android.support.constraint.ConstraintLayout>
